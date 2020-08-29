@@ -12,6 +12,8 @@ RUN apt-get update \
 # Install ipaexfont
 # RUN apt-get install -y fonts-ipaexfont
 
+RUN tlmgr update --self --all
+
 # install libjpeg & V8 for "psycho"
 RUN apt-get install -y libjpeg-dev
 RUN apt-get install -y libv8-dev
@@ -63,10 +65,12 @@ coda \
 caret \
 car \
 e1071 \
+Ecdat \
 ensembleR \
 elasticnet \ 
 fitdistrplus \
 Hmisc \
+faraway \
 fGarch \
 forecast \
 GGally \
